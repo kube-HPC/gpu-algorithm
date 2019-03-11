@@ -64,8 +64,8 @@ The algorithms input (in `init` and `start`) is an object (dict) with the follow
     taskId: 'unique identifier of the run'
 }
 ```
-name | description 
---- | --- | --- 
-train_size | The number of images to use for training. Must be smaller that the maximum number of images in the dataset (60000)
-num_epochs | The number of trainig epochs
-output | Output folder or s3 bucket to write the output data. for s3, the format is `s3://bucket/folder`.
+| name | description |
+| --- | --- | 
+| train_size | The number of images to use for training. Must be smaller that the maximum number of images in the dataset (60000) |
+| num_epochs | The number of trainig epochs |
+| output | Output folder or s3 bucket to write the output data. for s3, the format is `s3://bucket/folder`. |
