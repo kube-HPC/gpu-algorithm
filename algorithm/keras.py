@@ -3,9 +3,18 @@ from __future__ import absolute_import, division, print_function
 import os
 import time
 import json
+import sys
 
 import tensorflow as tf
 from tensorflow import keras
+
+def exit(args):
+  code = 0
+  print("args:", args)
+  if (args):
+      code = args.get('exitCode', 0)
+  print('Got exit command. Exiting with code', code)
+  sys.exit(code)
 
 def start(args):
   input=args["input"]
